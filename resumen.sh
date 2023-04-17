@@ -57,8 +57,8 @@
     echo "($nombre) tiene ($numero1) años"
 
 # OPERADORES LÓGICOS
-    # and           (&&)
-    # or            (||)
+    # and               (&&)
+    # or                (||)
 
 # EXPRESIONES
     # [Matemáticas]

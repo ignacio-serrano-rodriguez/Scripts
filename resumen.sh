@@ -126,9 +126,15 @@
                 echo "$i"
             done
 
-        # Tipo 3: Tipo 2 pero indicas el incremento del iterador "for de otros lenguajes"
+        # Tipo 3: Tipo 2 pero indicas el incremento del iterador
             echo 'for tipo 3'
             for i in {1..5..2}
+            do
+                echo "$i"
+            done
+        # Tipo 4: for de otros lenguajes
+            echo 'for tipo 4'
+            for (( i=1; i<=5; i++ ))
             do
                 echo "$i"
             done

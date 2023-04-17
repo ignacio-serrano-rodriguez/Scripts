@@ -8,20 +8,30 @@ function esPrimo
     local i=2
     local primo=1
 
-    while [ $i -le $1 ]
-    do
-
+    while [ $i -lt $1 ] && [ $primo -eq 1 ]
+    do  
+        if [ $(($1%$i)) -eq 0 ]
+        then
+            primo=0
+        else
+            let i=$i+1
+        fi        
     done
+
+    if [ $primo -eq 1 ]
+    then
+        echo "$1"
+    fi
 }
 
 if [ $# -gt 0 ]
 then
-    echo "numero: $1"
-    i=1
+    echo -e "1\n2\n3"
+    i=4
     while [ $i -le $1 ]
     do
-        let i=$i+1
         esPrimo $i
+        let i=$i+1
     done
 else
     echo 'No has introducido ningún argumento'

@@ -4,7 +4,8 @@
 # ARGUMENTOS SCRIPT
     # Imprimir por salida estandar (pantalla) -> (echo)
     # Las dobles comillas ("") permiten parametros.
-    # Imprimir saltos de linea -> opcion (-e) y caracter especial (\n)
+    # SI imprimir saltos de linea -> opcion (-e) y caracter especial (\n)
+    # NO imprimir saltos de linea -> opcion (-n)
     # Número de argumentos del script.
         echo -e "\n(#) Numero de argumentos: $#"
     # Cadena de texto con los argumentos del script.

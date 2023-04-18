@@ -7,16 +7,35 @@
 if [ $# -gt 0 ]
 then
 
+    contador=0
+    for argumento in $@
+    do
+        numeros[contador]=$argumento
+        let contador=$contador+1
+    done
+
     read -p "Introduce el orden (ascendente/descendente) " orden
 
     if [ $orden = "ascendente" ]
     then
-        echo 'Orden ascendente'
+        ordenados=( $( printf "%s\n" "${numeros[@]}" | sort -n ) )
+        echo "Orden ascendente: ${ordenados[*]}"
 
     else
         if [ $orden = "descendente" ]
         then
-            echo 'Orden descendente'
+
+            ordenados=( $( printf "%s\n" "${numeros[@]}" | sort -n ) )
+            echo -n "Orden descendente:"
+
+            let i=$#
+            while [ $i -ge 0 ]
+            do
+                echo -n "${ordenados[$i]} "
+                let i=$i-1
+            done
+
+            echo ''
         
         else
             echo 'Orden no valida'

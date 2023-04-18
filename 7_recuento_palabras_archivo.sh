@@ -8,7 +8,6 @@ contador=0
 while read linea; do
     for palabra in $linea; do
         numero=$(grep -o -i $palabra $1 | wc -l)
-        #echo "$palabra $numero"
         palabras[contador]="$palabra-$numero"
         let contador=$contador+1
     done

@@ -1,7 +1,7 @@
 #!/bin/bash
 
-# 7. Escribir un script que reciba un archivo de texto como argumento y luego cuente el
-# número de veces que se repite cada palabra en el archivo.
+# 7. Escribir un script que reciba un archivo de texto como argumento y 
+# luego cuente el número de veces que se repite cada palabra en el archivo.
 
 contador=0
 

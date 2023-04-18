@@ -67,7 +67,7 @@
         # >             (-gt) "greater than"
         # <=            (-le) "less equal"
         # <             (-lt) "less than"
-        # !=            (-nt) "not equal"
+        # !=            (-ne) "not equal"
         # ==            (-eq) "equal"
     # [Ficheros]
         # existe        (-e)

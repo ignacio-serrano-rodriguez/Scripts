@@ -5,7 +5,7 @@
 
 # PID (pid)
 # PPID (ppid)
-# uso memoria (size) ???
+# uso memoria (size)
 # tiempo CPU (pcpu)
 # nombre 
 

@@ -64,7 +64,7 @@ fi
 unset color_prompt force_color_prompt
 
 # Prompt modificado
-PS1="$(tput setaf 10)\h$(tput setaf 15)|$(tput setaf 14)\u$(tput setaf 15)|$(tput setaf 9)\w$(tput setaf 15)|$(tput setaf 15)> $(tput sgr0)" 
+PS1="$(tput setaf 2)\h$(tput setaf 3)|$(tput setaf 6)\u$(tput setaf 3)|$(tput setaf 1)\w$(tput setaf 3)|$(tput setaf 3)> $(tput sgr0)" 
 
 # If this is an xterm set the title to user@host:dir
 case "$TERM" in 

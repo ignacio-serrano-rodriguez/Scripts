@@ -36,6 +36,7 @@ function division
     fi
 }
 
+clear
 opcion=1
 until [ $opcion -eq 0 ]
 do  

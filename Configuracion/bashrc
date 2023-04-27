@@ -124,9 +124,27 @@ alias l='ls -CF'
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
 # MY ALIASES
+alias update='sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get autoremove -y'
+alias logout='gnome-session-quit --no-prompt'
 alias usersf='cut -d ':' -f 1,3,4 /etc/passwd | sort -t ':' -k 2 -n'
 alias groupsf='cut -d ':' -f 1,3,4 /etc/group | sort -t ':' -k 2 -n'
-alias update='sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get autoremove -y'
+
+alias set1='gnome-control-center &'
+alias set2='software-properties-gtk &'
+alias set3='gnome-tweaks &'
+alias files='open ~'
+alias time='gnome-weather &'
+alias chrome='google-chrome &'
+alias spoti="spotify &"
+alias wsp="whatsie &"
+alias discord="discord &"
+alias skype="skype &"
+alias calcu="gnome-calculator &"
+alias cam="cheese &"
+alias firefox="firefox &"
+
+alias store='snap-store'
+alias clock="gnome-clocks"
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

@@ -94,7 +94,7 @@ NORMAL=$(tput sgr0)
 #REVERSE=$(tput smso)
 #UNDERLINE=$(tput smul)
 
-# MI PROMPT MODIFICADO
+# MY MODIFIED PROMPT
 PS1="\[${BRIGHT}\]\[${GREEN}\]\u\[${NORMAL}\]\[${YELLOW}\]|\[${BRIGHT}\]\[${CYAN}\]\H\[${NORMAL}\]\[${YELLOW}\]|\[${BRIGHT}\]\[${BLUE}\]\w\[${NORMAL}\]\[${YELLOW}\]|\[${BRIGHT}\]\[${RED}\]\$\[${NORMAL}\]\[${YELLOW}\]|> \[${WHITE}\]"
 
 # enable color support of ls and also add handy aliases
@@ -123,18 +123,22 @@ alias l='ls -CF'
 #   sleep 10; alert
 alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo error)" "$(history|tail -n1|sed -e '\''s/^\s*[0-9]\+\s*//;s/[;&|]\s*alert$//'\'')"'
 
-# MY ALIASES
+# --- MY ALIASES ---
+# SYSTEM
 alias update='sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get autoremove -y'
 alias logout='gnome-session-quit --no-prompt'
 alias usersf='cut -d ':' -f 1,3,4 /etc/passwd | sort -t ':' -k 2 -n'
 alias groupsf='cut -d ':' -f 1,3,4 /etc/group | sort -t ':' -k 2 -n'
-
+alias ser1='systemctl'
+alias ser2='systemctl list-units --all --type=service'
+alias jobs='jobs -l'
+# LAUNCH JOBS
 alias set1='gnome-control-center &'
 alias set2='software-properties-gtk &'
 alias set3='gnome-tweaks &'
 alias files='open ~'
 alias time='gnome-weather &'
-alias chrome='google-chrome &'
+#alias chrome='google-chrome &'
 alias spoti="spotify &"
 alias wsp="whatsie &"
 alias discord="discord &"
@@ -142,7 +146,7 @@ alias skype="skype &"
 alias calcu="gnome-calculator &"
 alias cam="cheese &"
 alias firefox="firefox &"
-
+# LAUNCH PROGRAMS
 alias store='snap-store'
 alias clock='gnome-clocks'
 alias terminal='gnome-terminal'

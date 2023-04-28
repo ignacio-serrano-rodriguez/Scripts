@@ -125,31 +125,35 @@ alias alert='notify-send --urgency=low -i "$([ $? = 0 ] && echo terminal || echo
 
 # --- MY ALIASES ---
 # SYSTEM
-alias update='sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get autoremove -y'
-alias logout='gnome-session-quit --no-prompt'
-alias usersf='cut -d ':' -f 1,3,4 /etc/passwd | sort -t ':' -k 2 -n'
-alias groupsf='cut -d ':' -f 1,3,4 /etc/group | sort -t ':' -k 2 -n'
+alias bye='shutdown now'
+alias out='gnome-session-quit --no-prompt'
+alias new='reboot'
+alias upd='sudo apt update -y && sudo apt upgrade -y && sudo apt autoremove -y && sudo apt-get update -y && sudo apt-get upgrade -y && sudo apt-get autoremove -y'
+alias usrf='cut -d ':' -f 1,3,4 /etc/passwd | sort -t ':' -k 2 -n'
+alias grpf='cut -d ':' -f 1,3,4 /etc/group | sort -t ':' -k 2 -n'
 alias ser1='systemctl'
 alias ser2='systemctl list-units --all --type=service'
-alias jobs='jobs -l'
+alias job='jobs -l'
+alias chk='clear && neofetch && jobs -l && echo ""'
 # LAUNCH JOBS
-alias set1='gnome-control-center &'
-alias set2='software-properties-gtk &'
-alias set3='gnome-tweaks &'
-alias files='open ~'
-alias time='gnome-weather &'
-#alias chrome='google-chrome &'
-alias spoti="spotify &"
-alias wsp="whatsie &"
-alias discord="discord &"
-alias skype="skype &"
-alias calcu="gnome-calculator &"
-alias cam="cheese &"
-alias firefox="firefox &"
+alias st1='gnome-control-center &'
+alias st2='software-properties-gtk &'
+alias st3='gnome-tweaks &'
+alias fil='open ~'
+alias wth='gnome-weather &'                                                                                                                        
+alias spt='spotify &'
+alias wsp='whatsie &'
+alias dsc='discord &'
+alias skp='skype &'
+alias clc='gnome-calculator &'
+alias cam='cheese &'
+alias fox='firefox &'
+alias chr='google-chrome &'
+alias box='virtualbox &'
 # LAUNCH PROGRAMS
-alias store='snap-store'
-alias clock='gnome-clocks'
-alias terminal='gnome-terminal'
+alias str='snap-store'
+alias clk='gnome-clocks &'
+alias trm='gnome-terminal'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

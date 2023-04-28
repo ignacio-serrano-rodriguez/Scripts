@@ -144,7 +144,8 @@ alias cam="cheese &"
 alias firefox="firefox &"
 
 alias store='snap-store'
-alias clock="gnome-clocks"
+alias clock='gnome-clocks'
+alias terminal='gnome-terminal'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

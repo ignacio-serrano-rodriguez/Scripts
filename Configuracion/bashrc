@@ -133,6 +133,7 @@ alias usr='cut -d ':' -f 1,3,4 /etc/passwd | sort -t ':' -k 2 -n'
 alias grp='cut -d ':' -f 1,3,4 /etc/group | sort -t ':' -k 2 -n'
 alias job='jobs -l'
 alias neo='neofetch'
+alias tre='tree'
 # LAUNCH JOBS
 alias st1='gnome-control-center &'
 alias st2='software-properties-gtk &'
@@ -151,6 +152,8 @@ alias str='snap-store'
 alias clk='gnome-clocks &'
 alias cha='gnome-characters &'
 alias fil='nautilus &'
+alias syn='sudo synaptic &'
+alias bsx='basexgui &'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

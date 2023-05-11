@@ -140,6 +140,7 @@ alias st2='software-properties-gtk &'
 alias st3='gnome-tweaks &'
 alias wth='gnome-weather &'                                                                                                                        
 alias spt='spotify &'
+alias wsp='whatsie &'
 alias dsc='discord &'
 alias skp='skype &'
 alias clc='gnome-calculator &'
@@ -153,6 +154,7 @@ alias cha='gnome-characters &'
 alias fil='nautilus &'
 alias syn='sudo synaptic &'
 alias bsx='basexgui &'
+alias edg='microsoft-edge &'
 
 # Alias definitions.
 # You may want to put all your additions into a separate file like

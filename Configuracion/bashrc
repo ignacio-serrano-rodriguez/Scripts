@@ -134,6 +134,7 @@ alias grp='cut -d ':' -f 1,3,4 /etc/group | sort -t ':' -k 2 -n'
 alias job='jobs -l'
 alias neo='neofetch'
 alias tre='tree'
+alias cls='clear'
 # LAUNCH JOBS
 alias st1='gnome-control-center &'
 alias st2='software-properties-gtk &'

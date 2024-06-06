@@ -1,2 +1,2 @@
 #!/bin/bash
-gnome-terminal --command="bash -i -c 'cd ~; neofetch; echo Display server: $XDG_SESSION_TYPE; echo; upd; exec bash'"
+gnome-terminal -- bash -i -c 'cd ~; neofetch; echo -e "Display Server: $XDG_SESSION_TYPE\n"; upd; exec bash'
